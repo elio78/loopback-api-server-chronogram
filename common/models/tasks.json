@@ -1,0 +1,59 @@
+{
+  "name": "Tasks",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "string",
+      "required": true
+    },
+    "status": {
+      "type": "string",
+      "required": true
+    },
+    "criticity": {
+      "type": "number"
+    },
+    "plannedStartDate": {
+      "type": "date"
+    },
+    "state": {
+      "type": "string"
+    },
+    "effectiveDuration": {
+      "type": "number"
+    },
+    "effectiveStartDate": {
+      "type": "date"
+    },
+    "executionOrder": {
+      "type": "number"
+    },
+    "plannedDuration": {
+      "type": "number"
+    },
+    "prerequisites": {
+      "type": [
+        "string"
+      ]
+    },
+    "responsibles": {
+      "type": [
+        "string"
+      ],
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,43 @@
+{
+  "name": "Chronograms",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "string",
+      "required": true
+    },
+    "plannedStartDate": {
+      "type": "date",
+      "required": true
+    },
+    "effectiveStartDate": {
+      "type": "date"
+    },
+    "status": {
+      "type": "string",
+      "required": true
+    },
+    "state": {
+      "type": "string"
+    },
+    "effectiveDuration": {
+      "type": "number"
+    },
+    "plannedDuration": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
