@@ -38,7 +38,7 @@
     "createdAt": {
       "type": "date"
     },
-    "modifiedAt": {
+    "editedAt": {
       "type": "date"
     }
   },
