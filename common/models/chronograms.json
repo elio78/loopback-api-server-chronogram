@@ -2,12 +2,9 @@
   "name": "Chronograms",
   "base": "PersistedModel",
   "strict": false,
-  "idInjection": true,
+  "idInjection": false,
   "options": {
     "validateUpsert": true
-  },
-  "mixins": {
-    "TimeStamp": true
   },
   "properties": {
     "name": {
@@ -37,6 +34,12 @@
     },
     "plannedDuration": {
       "type": "number"
+    },
+    "createdAt": {
+      "type": "date"
+    },
+    "modifiedAt": {
+      "type": "date"
     }
   },
   "validations": [],
