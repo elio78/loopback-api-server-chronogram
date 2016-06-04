@@ -49,7 +49,7 @@
     "$resolved": true
   },
   "Chronograms": {
-    "dataSource": "ChronogramDB",
+    "dataSource": "chronogramdb",
     "public": true,
     "$promise": {},
     "$resolved": true
