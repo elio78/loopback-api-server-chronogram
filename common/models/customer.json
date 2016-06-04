@@ -1,7 +1,7 @@
 {
   "name": "Customer",
   "base": "User",
-  "idInjection": false,
+  "idInjection": true,
   "options": {
     "mysql": {
       "table": "customer"
