@@ -25,7 +25,7 @@
     "dataSource": "db"
   },
   "Customer": {
-    "dataSource": "db",
+    "dataSource": "customerdb",
     "$promise": {},
     "$resolved": true
   },
