@@ -10,10 +10,6 @@
     "TimeStamp": true
   },
   "properties": {
-    "name": {
-      "type": "string",
-      "required": true
-    },
     "description": {
       "type": "string",
       "required": true
@@ -53,6 +49,12 @@
       "type": [
         "string"
       ]
+    },
+    "name": {
+      "type": "string",
+      "id": true,
+      "required": true,
+      "index": false
     }
   },
   "validations": [],
