@@ -1,7 +1,7 @@
 module.exports = function(app) {
-var MongoDB = app.dataSources.db;
+var customerdb = app.dataSources.db;
 
-MongoDB.automigrate('Customer', function(err) {
+customerdb.automigrate('Customer', function(err) {
    if (err) throw (err);
    var Customer = app.models.Customer;
 
