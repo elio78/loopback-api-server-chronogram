@@ -25,7 +25,9 @@
     "dataSource": "db"
   },
   "Customer": {
-    "dataSource": "db"
+    "dataSource": "chronogramdb",
+    "$promise": {},
+    "$resolved": true
   },
   "Inventory": {
     "dataSource": "db"
@@ -37,13 +39,13 @@
     "dataSource": "db"
   },
   "Histories": {
-    "dataSource": "db",
+    "dataSource": "chronogramdb",
     "public": true,
     "$promise": {},
     "$resolved": true
   },
   "Tasks": {
-    "dataSource": "db",
+    "dataSource": "chronogramdb",
     "public": true,
     "$promise": {},
     "$resolved": true
