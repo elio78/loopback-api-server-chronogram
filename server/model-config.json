@@ -45,7 +45,7 @@
     "$resolved": true
   },
   "Tasks": {
-    "dataSource": "db",
+    "dataSource": "tasksdb",
     "public": true,
     "$promise": {},
     "$resolved": true

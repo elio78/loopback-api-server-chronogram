@@ -42,5 +42,14 @@
     "modelIndex": "",
     "connector": "cloudant",
     "user": "d5f6ac5a-3537-42c7-b3d6-cec2d4b2aa1f-bluemix"
+  },
+  "tasksdb": {
+    "url": "https://d5f6ac5a-3537-42c7-b3d6-cec2d4b2aa1f-bluemix:be1a4eb04f948d7b953a006d0c66758a8733bff5baf9492702ea4f71e1e0ded7@d5f6ac5a-3537-42c7-b3d6-cec2d4b2aa1f-bluemix.cloudant.com",
+    "database": "tasksdb",
+    "username": "d5f6ac5a-3537-42c7-b3d6-cec2d4b2aa1f-bluemix",
+    "password": "be1a4eb04f948d7b953a006d0c66758a8733bff5baf9492702ea4f71e1e0ded7",
+    "name": "tasksdb",
+    "modelIndex": "",
+    "connector": "cloudant"
   }
 }
