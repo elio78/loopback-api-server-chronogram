@@ -43,6 +43,16 @@
     },
     "editedAt": {
       "type": "date"
+    },
+    "tasks": {
+      "type": [
+        "string"
+      ]
+    },
+    "responsibles": {
+      "type": [
+        "string"
+      ]
     }
   },
   "validations": [],
