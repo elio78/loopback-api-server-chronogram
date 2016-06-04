@@ -39,7 +39,7 @@
     "dataSource": "db"
   },
   "Histories": {
-    "dataSource": "db",
+    "dataSource": "historiesdb",
     "public": true,
     "$promise": {},
     "$resolved": true
