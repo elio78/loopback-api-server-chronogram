@@ -49,9 +49,13 @@
     "$resolved": true
   },
   "Chronograms": {
-    "dataSource": "db",
+    "dataSource": "ChronogramDB",
     "public": true,
     "$promise": {},
     "$resolved": true
+  },
+  "cloudant-nosql": {
+    "dataSource": "db",
+    "public": true
   }
 }
