@@ -1,5 +1,5 @@
 module.exports = function(app) {
-var customerdb = app.dataSources.db;
+var customerdb = app.dataSources.customerdb;
 
 customerdb.automigrate('Customer', function(err) {
    if (err) throw (err);
