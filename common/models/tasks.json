@@ -50,11 +50,6 @@
         "string"
       ],
       "required": true
-    },
-    "history": {
-      "type": [
-        "string"
-      ]
     }
   },
   "validations": [],
