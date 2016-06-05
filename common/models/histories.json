@@ -18,6 +18,9 @@
     "tasksId": {
       "type": "string",
       "required": true
+    },
+    "createdAt": {
+      "type": "date"
     }
   },
   "validations": [],

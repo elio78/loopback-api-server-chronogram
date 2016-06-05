@@ -50,6 +50,12 @@
         "string"
       ],
       "required": true
+    },
+    "createdAt": {
+      "type": "date"
+    },
+    "editedAt": {
+      "type": "date"
     }
   },
   "validations": [],
