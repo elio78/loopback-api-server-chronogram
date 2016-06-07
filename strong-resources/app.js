@@ -5,7 +5,7 @@ var passport = require('passport');
 var cookieParser = require('cookie-parser');
 var session = require('express-session');
 //----------------------Ajouts Elio----Fin
-
+var app=express();
 
 // Create a proxy server with custom application logic
 var proxy = httpProxy.createProxyServer({});
@@ -33,14 +33,14 @@ var server = http.createServer(function(req, res) {
 	}
 });
 
-server.use(cookieParser());
-server.use(session({resave: 'true', saveUninitialized: 'true' , secret: 'keyboard cat'}));
-server.use(passport.initialize());
-server.use(passport.session()); passport.serializeUser(function(user, done) {
+app.use(cookieParser());
+app.use(session({resave: 'true', saveUninitialized: 'true' , secret: 'keyboard cat'}));
+app.use(passport.initialize());
+app.use(passport.session()); passport.serializeUser(function(user, done) {
    done(null, user);
 }); 
 
-passport.deserializeUser(function(obj, done) {
+app.deserializeUser(function(obj, done) {
    done(null, obj);
 });         
 // VCAP_SERVICES contient toutes les données d'identification des services liés à
@@ -53,7 +53,7 @@ var client_secret = ssoConfig.credentials.secret;
 var authorization_url = ssoConfig.credentials.authorizationEndpointUrl;
 var token_url = ssoConfig.credentials.tokenEndpointUrl;
 var issuer_id = ssoConfig.credentials.issuerIdentifier;
-var callback_url = "https://chronogram-auth-gy4dv0atyx-cj10.iam.ibmcloud.com/idaas/mtfim/sps/idaas/login/facebook/callback";        
+var callback_url = "https://chronogram-auth-gy4dv0atyx-cj10.iam.ibmcloud.com";        
 
 var OpenIDConnectStrategy = require('passport-idaas-openidconnect').IDaaSOIDCStrategy;
 var Strategy = new OpenIDConnectStrategy({
