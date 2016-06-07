@@ -53,7 +53,7 @@ var client_secret = ssoConfig.credentials.secret;
 var authorization_url = ssoConfig.credentials.authorizationEndpointUrl;
 var token_url = ssoConfig.credentials.tokenEndpointUrl;
 var issuer_id = ssoConfig.credentials.issuerIdentifier;
-var callback_url = https://chronogram-auth-gy4dv0atyx-cj10.iam.ibmcloud.com/idaas/mtfim/sps/idaas/login/facebook/callback;        
+var callback_url = "https://chronogram-auth-gy4dv0atyx-cj10.iam.ibmcloud.com/idaas/mtfim/sps/idaas/login/facebook/callback";        
 
 var OpenIDConnectStrategy = require('passport-idaas-openidconnect').IDaaSOIDCStrategy;
 var Strategy = new OpenIDConnectStrategy({
